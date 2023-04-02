@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Карусель изображений</title>
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="container">
+    <div id="calculator">
+        <div id="result">
+        <input id="resultValue" type="text" placeholder="0">
+        </div>
+            <div id="lines">
+                <div class="line">
+                    <span class="column" onclick="enteredValue(1)">1</span>
+                    <span class="column" onclick="enteredValue(2)">2</span>
+                    <span class="column" onclick="enteredValue(3)">3</span>
+                    <span class="columnCalculation" onclick="enteredValue('+')">+</span>
+                </div>
+                <div class="line">
+                    <span class="column" onclick="enteredValue(4)">4</span>
+                    <span class="column" onclick="enteredValue(5)">5</span>
+                    <span class="column" onclick="enteredValue(6)">6</span>
+                    <span class="columnCalculation" onclick="enteredValue('-')">-</span>
+                </div>
+                <div class="line">
+                    <span class="column" onclick="enteredValue(7)">7</span>
+                    <span class="column" onclick="enteredValue(8)">8</span>
+                    <span class="column" onclick="enteredValue(9)">9</span>
+                    <span class="columnCalculation" onclick="enteredValue('*')">*</span>
+                </div>
+                <div class="line">
+                    <span class="column" onclick="enteredValue('.')">.</span>
+                    <span class="column" onclick="enteredValue(0)">0</span>
+                    <span class="columnClear" onclick="erase()">C</span>
+                    <span class="columnCalculation" onclick="enteredValue('/')">/</span>
+                </div>
+                <div class="line">
+                    <span class="columnCalculation" onclick="equal()">=</span>
+                </div>
+            </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
